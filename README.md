@@ -1,4 +1,4 @@
- Architecture de la Solution pour l'Entraînement YOLOv5 sur Données de Prunes  
+ Architecture de la Solution pour l'Entraînement YOLOv5 sur Données de Prunes  "https://files.fm/u/6av6h6kzns"
 
 Cette solution permet d'entraîner un modèle YOLOv5 pour détecter différents défauts sur des prunes (meurtries, fissurées, pourries, tachetées, intactes, non mûres).  
 
@@ -7,7 +7,7 @@ Cette solution permet d'entraîner un modèle YOLOv5 pour détecter différents 
  1. Structure des Fichiers et Dossiers  
 La solution repose sur une organisation stricte des données et un script Python automatisé pour l'entraînement.  
 
- 1.1. Arborescence des Données  
+ 1.1. Arborescence des Données  ici se trouve le dataset_  "https://files.fm/u/6av6h6kzns" 
 
 /
 └── data_plum/
