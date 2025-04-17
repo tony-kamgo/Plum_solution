@@ -1,0 +1,8 @@
+
+path: ../datasets/coco128 
+
+train: C:/Users/Moi/venv2/intro/data_plum/images/train
+val: C:/Users/Moi/venv2/intro/data_plum/images/val
+
+nc: 6  # nombre de classes
+names: ['bruised', 'cracked', 'rotten', 'spotted', 'unaffected', 'unripe']
