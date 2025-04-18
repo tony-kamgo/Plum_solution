@@ -1,3 +1,6 @@
+detect_plum.py est pour entrainer et former le model et nous fournir un dossier weight et aussi pour faire une analyse de base.
+detect_plum_app.py c'est l'application qui utilise le model creer pour detecter la qualite de prunes
+
  Architecture de la Solution pour l'Entraînement YOLOv5 sur Données de Prunes  "https://files.fm/u/6av6h6kzns"
 
 Cette solution permet d'entraîner un modèle YOLOv5 pour détecter différents défauts sur des prunes (meurtries, fissurées, pourries, tachetées, intactes, non mûres).  
