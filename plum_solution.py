@@ -6,11 +6,11 @@ from matplotlib import pyplot as plt
 import shutil
 
 # Définir les chemins pour les fichiers YOLOv5, le modèle, l'image et les données
-yolov5_path = r'C:\Users\Moi\venv2\Lib\site-packages\yolov5'  # Chemin vers le répertoire YOLOv5
-weights_path = r'C:\Users\Moi\venv2\yolov5s.pt'  # Modèle YOLOv5 pré-entrainé
-image_path = r'C:\Users\Moi\venv2\intro\data_plum\images\train\cracked_plum_6.png'  # Image d'entrée
-data_path = r'C:\Users\Moi\venv2\Lib\site-packages\yolov5\data\custom-data-plum.yaml'  # Fichier YAML des données
-output_dir = r'C:\Users\Moi\venv2\results'  # Répertoire de sortie pour les résultats
+yolov5_path = r'Lib\site-packages\yolov5'  # Chemin vers le répertoire YOLOv5
+weights_path = r'yolov5s.pt'  # Modèle YOLOv5 pré-entrainé
+image_path = r'data_plum\images\train\cracked_plum_6.png'  # Image d'entrée
+data_path = r'yolov5\data\custom-data-plum.yaml'  # Fichier YAML des données
+output_dir = r'results'  # Répertoire de sortie pour les résultats
 labels_dir = os.path.join(output_dir, 'detection_results', 'labels')  # Dossier temporaire de sauvegarde pour les labels
 
 # Noms des classes selon le fichier YAML
