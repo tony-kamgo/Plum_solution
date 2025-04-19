@@ -1,12 +1,7 @@
 import os
-import cv2
 import tkinter as tk
 from tkinter import filedialog, ttk
 from PIL import Image, ImageTk
-import numpy as np
-import shutil
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import matplotlib.pyplot as plt
 
 class PlantAIApp:
     def __init__(self, root):
@@ -15,9 +10,8 @@ class PlantAIApp:
         self.root.geometry("1000x700")
         
         # Configuration des chemins
-        self.yolov5_path = r'C:\Users\Moi\venv2\Lib\site-packages\yolov5'
-        self.model_path = r'C:\Users\Moi\venv2\yolov5s.pt'  # Modèle pré-entraîné
-        self.output_dir = r'C:\Users\Moi\venv2\results'
+        self.yolov5_path = r'Lib\site-packages\yolov5'
+        self.output_dir = r'results'
         self.class_names = ["bruised", "cracked", "rotten", "spotted", "unaffected", "unripe"]
         
         # Variables
@@ -104,10 +98,10 @@ class PlantAIApp:
         self.root.update()
         
         try:
-            # Étape 1: Exécuter la détection avec YOLOv5
+            # Étape 1: Exécuter la détection avec YOLOv5 en utilisant le modèle personnalisé
             detect_command = (
                 f'python {self.yolov5_path}\\detect.py '
-                f'--weights {self.model_path} '
+                f'--weights {self.output_dir}\\best.pt '
                 f'--img 640 --conf 0.25 '
                 f'--source {self.image_path} '
                 f'--project {self.output_dir} '
