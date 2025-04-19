@@ -10,7 +10,7 @@ class PlantAIApp:
         self.root.geometry("1000x700")
         
         # Configuration des chemins
-        self.yolov5_path = r'Lib\site-packages\yolov5'
+        self.yolov5_path = r'yolov5'
         self.output_dir = r'results'
         self.class_names = ["bruised", "cracked", "rotten", "spotted", "unaffected", "unripe"]
         
