@@ -1,3 +1,6 @@
+le logiciel ou encore la solution est detect_plum_app.py il (requis le fichier best.pt, la dependance yolo via la commande pip ou en locale qui doit etre loger dans le dossier site package de votre envireonnement virtuel)
+
+
 detect_plum.py est pour entrainer et former le model et nous fournir un dossier weight et aussi pour faire une analyse de base.
 detect_plum_app.py c'est l'application qui utilise le model creer pour detecter la qualite de prunes
 
